@@ -1303,7 +1303,7 @@ body { background: var(--white); }
 
   .container__bg {
     height: 100vh;
-    background-image: url("/assets/images/fondo-gallinas.jpg");
+    background-image: url("../images/fondo-gallinas.jpg");
     background-size: cover;
     position: relative;
     filter: brightness();
