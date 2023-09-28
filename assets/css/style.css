@@ -40,7 +40,7 @@
   --fs-2: 28px;
   --fs-3: 32px;
   --fs-4: 20px;
-  --fs-5: 25px;
+  --fs-5: 22px;
 
   --fw-500: 500;
   --fw-700: 700;
@@ -161,10 +161,11 @@ body { background: var(--white); }
 .section-text,
 .card-text,
 .card-subtitle {
-  font-family: var(--ff-rubik);
+  font-family: var(--ff-poppins);
   color: var(--sonic-silver);
   font-size: var(--fs-5);
   line-height: 1.8;
+  font-weight: 600;
 }
 
 .vector-line { display: none; }
@@ -302,13 +303,14 @@ body { background: var(--white); }
   margin-bottom: 45px;
 }
 
-.about-img { width: 90%; }
+.about-img { width: 80%; margin: 0 auto; }
 
-.departments-img { width: 100%; }
+.departments-img { width: 100%; margin: 0 auto; }
+.departments2-img { width: 80%; margin: 0 auto; }
 
-.about-logo { width: 25%; }
+.about-logo { width: 18%; }
 
-.mundial-logo { width: 15%; height: 10%; margin: 0 auto; }
+.mundial-logo { width: 10%; height: 10%; margin: 0 auto;}
 
 .play-btn {
   position: absolute;
@@ -348,7 +350,7 @@ body { background: var(--white); }
 
 .about-title { margin-bottom: 5%;     max-width: 90%;}
 
-.about .section-text { margin-bottom: 5%; margin-top: 5%;}
+.about .section-text { margin-bottom: 5%; margin-top: 2%; margin-right: 5%;}
 
 
 
@@ -389,8 +391,8 @@ body { background: var(--white); }
 }
 
 .departments-card img {
-  width: 100%;
-  height: 100%;
+  width: 50%;
+  height: 80%;
   object-fit: cover;
   transition: var(--transition);
 }
