@@ -286,6 +286,11 @@ body { background: var(--white); }
 
 .hero-title { margin-bottom: 20px; }
 
+.hero-title .highlight {
+  color: var(--yellow);
+  display: inline;
+}
+
 .hero .section-text { margin-bottom: 45px; }
 
 
