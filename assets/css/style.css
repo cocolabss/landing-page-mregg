@@ -225,11 +225,11 @@ body {
 .navbar {
   position: fixed;
   top: 0;
-  left: -250px;
+  right: -0;
   width: 100%;
   max-width: 250px;
   height: 100%;
-  background: var(--mantis);
+  background: #fff;
   padding: 80px 20px;
   transition: 0.15s ease-in;
   z-index: 3;
@@ -246,8 +246,8 @@ body {
   right: 0;
   font-size: 30px;
   padding: 5px;
-  background: var(--rich-black-fogra-29);
-  color: var(--white);
+  background: transparent;
+  color: #000;
 }
 
 .navbar .logo {
@@ -321,18 +321,40 @@ body {
 }
 
 .about-banner {
-  position: relative;
-  margin-bottom: 45px;
+  width: 50vh; 
+  height: 50vh; 
+  background-color: #eeb231; 
+  border-radius: 50%; 
+  position: absolute;
+  top: 50%; 
+  left: 35%; 
+  transform: translate(-50%, -50%); 
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .about-img {
-  width: 80%;
-  margin: 0 auto;
+  position: absolute;
+  bottom: 0; 
+  left: -50%; 
+  z-index: 2;
+  width: 30rem; 
+  height: auto; 
+}
+
+.about-text {
+  margin-left: 40% !important;
+  margin-bottom: 10%;
 }
 
 .departments-img {
   width: 100%;
-  margin: 0 auto;
+  margin-left: 15%;
+  margin-top: -20%;
+  position: relative;
+  z-index: 1;
 }
 
 .departments2-img {
@@ -341,7 +363,7 @@ body {
 }
 
 .about-logo {
-  width: 18%;
+  width: 22%;
 }
 
 .mundial-logo {
@@ -1356,19 +1378,19 @@ body {
  * responsive for larger than 1200px screen
  */
 
-@media (min-width: 1200px) {
+@media (min-width: 568px) {
   /**
    * REUSED STYLE
    */
 
-  .container__bg {
+   .container__bg {
     height: 100vh;
-    background-image: url("../images/fondo-gallinas.jpg");
-    background-size: cover;
+    background-image: url("../images/fondo_inicial.png");
+    background-size: cover; 
     position: relative;
-    filter: brightness();
+    filter: brightness(); 
     overflow-y: hidden;
-  }
+}
 
   .container {
     max-width: 100%;
@@ -1380,8 +1402,7 @@ body {
     transform: translate(-45%, -15%);
     width: 80%;
     padding-bottom: 80%;
-    background: rgba(136, 103, 27, 0.5);
-    border-radius: 50%;
+    background: transparent;
     overflow: hidden;
     box-sizing: border-box;
   }
@@ -1389,7 +1410,7 @@ body {
   .container__bg--circle .hero-content {
     position: absolute;
     top: 55%;
-    left: 70%;
+    left: 73%;
     transform: translate(-30%, -30%);
     width: 40%;
   }
@@ -1410,7 +1431,7 @@ body {
   .container__bg--circle figure {
     position: absolute;
     top: 35%;
-    left: 70%;
+    left: 69%;
     transform: translate(-30%, -30%);
     z-index: 2;
   }
@@ -1455,4 +1476,24 @@ body {
   .cta-banner {
     left: 68%;
   }
+}
+
+@media screen and (max-width: 568px) {
+  .navbar-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+  }
+  .align-center-phone{
+    margin-left: 20%;
+  }
+}
+
+.beneficios {
+  background-color: #ececed;
+  max-height: 50vh;
+  overflow: hidden;
+  position: relative; 
+  z-index: 0;
 }
