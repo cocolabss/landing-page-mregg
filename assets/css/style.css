@@ -1755,10 +1755,11 @@ body {
   }
 
 
+  .btn {
+    margin: 0;
+  }
 
   /* MUNDIAL */
-
-
 
   .mundial-content {
     display: flex;
