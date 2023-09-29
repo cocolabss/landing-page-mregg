@@ -841,6 +841,7 @@ body {
 
  .register-content img {
   margin: 2em;
+  max-width: 400px;
  }
 
 
@@ -875,6 +876,7 @@ body {
 
  .social-icons img {
   margin: 0.5em;
+  width: 3em;
  }
 
 
@@ -1302,6 +1304,18 @@ body {
   .about-logo {
     display: none !important;
   }
+
+  .register-content {
+    width: 90%;
+
+  }
+
+
+ .register-content img {
+  margin: 2em;
+  max-width: 200px;
+ }
+ 
 }
 
 /**
