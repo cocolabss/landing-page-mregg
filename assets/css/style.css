@@ -1702,14 +1702,14 @@ body {
 
   .container__bg--circle .hero-content {
     position: absolute;
-    top: 55%;
-    left: 72%;
+    top: 50%;
+    left: 70%;
     transform: translate(-30%, -30%);
     width: 40%;
   }
 
   .container__bg--circle .hero-content h1 {
-    font-size: 90px;
+    font-size: 70px;
     color: var(--white);
     font-weight: 600;
 
@@ -1719,7 +1719,7 @@ body {
     color: var(--yellow);
     display: inline;
     font-weight: 600;
-    font-size: 90px;
+    font-size: 70px;
   }
 
   .container__bg  .hero-content {
@@ -1735,8 +1735,8 @@ body {
 
   .container__bg--circle figure {
     position: absolute;
-    top: 34%;
-    left: 42%;
+    top: 30%;
+    left: 38%;
     transform: translate(10%, -30%);
     z-index: 2;
   }
