@@ -305,13 +305,15 @@ body {
 .container__bg  .hero-content {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Alinea los elementos al inicio */
+  justify-content: center;
 
 }
 
 .hero-content h1 {
-  margin: 0;
+  display: inline-block;
+  margin: 0 auto;
 }
+
 
 
 .hero-content .highlight {
@@ -1718,6 +1720,17 @@ body {
     display: inline;
     font-weight: 600;
     font-size: 90px;
+  }
+
+  .container__bg  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  
+  }
+
+  .hero-content h1 {
+    margin: 0;
   }
 
   .container__bg--circle figure {
