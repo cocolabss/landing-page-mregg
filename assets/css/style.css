@@ -488,6 +488,7 @@ body {
 
 .join-img {
   width: 100%;
+  max-width: 55%;
   margin: 0 auto;
 }
 
@@ -611,8 +612,7 @@ body {
 }
 
 .mundial-content {
-  display: inline;
-  margin: 5%;
+  display: flex;
 }
 
 /* EGG */
@@ -655,6 +655,7 @@ body {
   color: var(--white);
   font-size: var(--fs-1);
   bottom: 20px;
+  font-family: var(--ff-poppins);
 }
 
 .egg-item .egg-number {
@@ -688,6 +689,27 @@ body {
 
 .demo {
   display: none;
+}
+
+
+
+.info-egg {
+  text-align: justify;
+  color: var(--white);
+  margin: 0;
+  font-size: var(--fs-3);
+}
+
+
+
+
+
+.egg-item .egg-number {
+  font-size: 100px;
+  text-align: center;
+  color: var(--white);
+  margin: 0;
+  display: inline-block;
 }
 
 /*-----------------------------------*\
@@ -773,6 +795,83 @@ body {
 /*-----------------------------------*\
  * #FOOTER
 \*-----------------------------------*/
+
+.end-container {
+  background: #e4ae42;
+  width: 100%;
+  padding: 50px 0;
+ }
+ 
+ .end-content {
+  margin: auto;
+  width: 1200px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+ }
+ 
+ .contact-logo img {
+  grid-column-start: logo;
+  grid-column-end: contact;
+  width: 150px;
+ }
+ 
+ .contact-logo {
+ }
+ 
+ .contact-block {
+  border-left: 2px solid #31170e;
+  padding-left: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  max-width: 350px;
+ }
+ 
+ .contact-light {
+  font-size: 1em;
+  color: #fff1af;
+  margin-bottom: 1em;
+ }
+ 
+ .contact-dark {
+  font-size: 1.2em;
+  color: #31170e;
+ }
+ 
+ .download-links > a {
+  background: white;
+  min-width: 135px;
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  color: #1f2325;
+  font-size: 0.9em;
+  border-radius: 4px;
+ }
+ 
+ .download-links > a:hover {
+  background: #efefef;
+ }
+ 
+ @media screen and (max-width: 1024px) {
+  .end-content {
+   flex-direction: column;
+  }
+  
+  .contact-block {
+   border: none;
+  }
+  
+  .contact-logo img {
+   margin: auto;
+  }
+  
+  .end-content {
+   width: 100%;
+  }
+ }
+
 
 .footer {
   background: var(--rich-black-fogra-29);
@@ -1234,6 +1333,11 @@ body {
    * ABOUT
    */
 
+
+  .about {
+    margin: 150px;
+  }
+
   .about .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1372,6 +1476,9 @@ body {
   MUNDIAL
   */
 
+
+
+
   .mundial {
     position: relative;
     z-index: 1;
@@ -1504,6 +1611,19 @@ body {
     height: auto;
   }
 
+
+
+  /* MUNDIAL */
+
+
+
+  .mundial-content {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+
+
 /* DEMO */
 
 
@@ -1513,7 +1633,7 @@ body {
 }
 
 .footer-background {
-  --top-breakpoint: 25%;
+  --top-breakpoint: 15%;
   --bottom-breakpoint: 85%;
   width: 100%;
   background: rgb(255,255,255);
@@ -1537,13 +1657,18 @@ body {
   margin: 0;
   font-size: 10em;
  }
+
+ .footer-title {
+  display: flex;
+  align-items: flex-end;
+ }
  
  .footer-title img {
   width: 115px;
-  height: 115px;
-  filter: drop-shadow(17px 12px 28px #000000);
-  float: bottom;
+  /*filter: drop-shadow(17px 12px 28px #000000);*/
+  margin-right: 1em;
  }
+ 
 
 
 }
