@@ -61,7 +61,7 @@
    * spacing
    */
 
-  --section-padding: 30px;
+  --section-padding: 40px;
 }
 
 /*-----------------------------------*\
@@ -289,24 +289,37 @@ body {
  * #HERO
 \*-----------------------------------*/
 
-.hero {
+.container__bg {
   background: var(--gradient);
-  padding: 150px 0 var(--section-padding);
+  padding: 80px 0 var(--section-padding);
 }
 
-.hero-banner {
-  margin-bottom: 30px;
+.container__bg--circle img {
+  width: 60%;
 }
 
-.hero-banner img {
-  width: 100%;
+.mregg-img-logo {
+  display: none;
 }
 
-.hero-title {
-  margin-bottom: 20px;
+.mregg-gif-logo {
+  margin: 0 auto;
 }
 
-.hero-title .highlight {
+
+.container__bg  .hero-content {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.hero-content h1 {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+
+.hero-content .highlight {
   color: var(--yellow);
   display: inline;
   font-weight: 900;
@@ -355,10 +368,10 @@ body {
   margin: 0 auto;
 }
 
-.mundial-content .highlight {
-  color: var(--yellow);
+.about .highlight {
   display: inline;
- 
+  color: var(--yellow);
+  font-weight: 900;
 }
 
 .play-btn {
@@ -701,18 +714,12 @@ body {
   display: none;
 }
 
-
-
 .info-egg {
   text-align: justify;
   color: var(--white);
   margin: 0;
   font-size: var(--fs-3);
 }
-
-
-
-
 
 .egg-item .egg-number {
   font-size: 100px;
@@ -875,8 +882,8 @@ body {
 
 
  .social-icons img {
-  margin: 0.5em;
-  width: 3em;
+  margin: 1vw;
+  height: 7vh;
  }
 
 
@@ -1312,7 +1319,6 @@ body {
 
 
  .register-content img {
-  margin: 2em;
   max-width: 200px;
  }
  
@@ -1336,7 +1342,7 @@ body {
   }
 
   /**
-   * REUSED STYLE
+   * REUSED STYLEabout-content
    */
 
   .container {
@@ -1655,7 +1661,7 @@ body {
 
   .container__bg {
     height: 100vh;
-    background-image: url("../images/fondo-gallinas.jpg");
+    background-image: url("../images/fondo-mregg.png");
     background-size: cover;
     position: relative;
     filter: brightness();
@@ -1683,24 +1689,33 @@ body {
     transform: translate(-45%, -15%);
     width: 80%;
     padding-bottom: 80%;
-    background: rgba(136, 103, 27, 0.5);
     border-radius: 50%;
     overflow: hidden;
     box-sizing: border-box;
   }
 
+  .mregg-gif-logo {
+    display: none;
+  }
+  
+  .mregg-img-logo {
+    display: block;
+  }
+
+
   .container__bg--circle .hero-content {
     position: absolute;
-    top: 55%;
-    left: 70%;
+    top: 48%;
+    left: 66%;
     transform: translate(-30%, -30%);
     width: 40%;
   }
 
   .container__bg--circle .hero-content h1 {
-    font-size: var(--fs-2);
+    font-size: var(--fs-1);
     color: var(--white);
     font-weight: 600;
+
   }
 
   .container__bg--circle .hero-content .highlight {
@@ -1708,19 +1723,22 @@ body {
     display: inline;
     font-size: var(--fs-2);
     font-weight: 600;
+    font-size: var(--fs-1);
   }
 
   .container__bg--circle figure {
     position: absolute;
-    top: 35%;
-    left: 70%;
+    top: 30%;
+    left: 65%;
     transform: translate(-30%, -30%);
     z-index: 2;
   }
 
   .container__bg--circle figure img {
-    max-width: 70%;
+    max-width: 100%;
     height: auto;
+    margin-left: 200px;
+    
   }
 
 
