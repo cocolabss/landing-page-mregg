@@ -813,7 +813,7 @@ body {
  .contact-logo img {
   grid-column-start: logo;
   grid-column-end: contact;
-  width: 150px;
+  width: 250px;
  }
  
  .contact-logo {
@@ -1633,8 +1633,8 @@ body {
 }
 
 .footer-background {
-  --top-breakpoint: 15%;
-  --bottom-breakpoint: 85%;
+  --top-breakpoint: 25%;
+  --bottom-breakpoint: 87%;
   width: 100%;
   background: rgb(255,255,255);
   background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) var(--top-breakpoint), rgba(49,23,14,1) var(--top-breakpoint), rgba(49,23,14,1) var(--bottom-breakpoint), rgba(255,255,255,1) var(--bottom-breakpoint), rgba(255,255,255,1) 100%);
@@ -1649,8 +1649,9 @@ body {
  
  .footer-cta-title {
   display: inline-block;
-  font-size: 3em;
+  font-size: 2.5em;
   margin-bottom: 0;
+  font-weight: 300;
  }
  
  .footer-cta-text {
@@ -1664,7 +1665,7 @@ body {
  }
  
  .footer-title img {
-  width: 115px;
+  width: 200px;
   /*filter: drop-shadow(17px 12px 28px #000000);*/
   margin-right: 1em;
  }
