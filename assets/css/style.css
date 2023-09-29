@@ -352,8 +352,13 @@ body {
 .mundial-logo {
   width: 80%;
   max-width: 200px;
-  /* height: 10%; */
   margin: 0 auto;
+}
+
+.mundial-content .highlight {
+  color: var(--yellow);
+  display: inline;
+ 
 }
 
 .play-btn {
@@ -1647,6 +1652,17 @@ body {
     max-width: 100%;
   }
 
+
+  .mundial .container {
+    margin-top: 30px;
+    max-width: 50%;
+  }
+  
+  .mundial-list {
+    margin-top: 50px;
+  }
+
+
   .container__bg--circle {
     position: absolute;
     left: 0;
@@ -1761,6 +1777,14 @@ body {
   max-width: 550px;
 }
 
+
+.departments-line {
+  max-width: 1500px;
+  margin: 0 auto;
+  margin-top: 50px;
+  border-bottom: 1px solid #31170e;
+}
+
 /**
    * INSTRUCTOR
    */
@@ -1774,7 +1798,7 @@ body {
    */
 
 .mundial-title {
-  max-width: 750px;
+  max-width: 900px;
 }
 
 /* DEMO */
