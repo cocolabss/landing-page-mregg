@@ -105,6 +105,7 @@ html {
 body {
   background: var(--white);
   overflow-x: hidden;
+  font-family: var(--ff-poppins);
 }
 
 /*-----------------------------------*\
@@ -358,7 +359,7 @@ body {
 
 .about-img-2 {
   position: absolute;
-  bottom: 0; 
+  bottom: -20px; 
   left: -50%; 
   z-index: 2;
   width: 30rem; 
@@ -412,7 +413,28 @@ body {
   }
 }
 
-@media screen and (max-width: 468px) and (min-width: 360px){
+@media screen and (max-width: 410px) and (min-width: 360px){
+  .about-img-2 {
+    width: 12rem; 
+    left: -55%; 
+  }
+  .about-banner-2 {
+    width: 28vh; 
+    height: 28vh; 
+    background-color: #eeb231; 
+    left: 20%; 
+
+  }
+  .about-text {
+    margin-left: 35% !important;
+    margin-bottom: 10%;
+  }
+  .h1 {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 460px) and (min-width: 411px){
   .about-img-2 {
     width: 15rem; 
     left: -55%; 
@@ -467,8 +489,8 @@ body {
 }
 
 .mundial-logo {
-  width: 80%;
-  max-width: 200px;
+  width: 150px;
+  height: 150px;
   margin: 0 auto;
 }
 
@@ -583,7 +605,7 @@ body {
 
 .departments-card .card-link {
   color: var(--orange-web);
-  font-family: var(--ff-rubik);
+  font-family: var(--ff-poppins);
   font-weight: var(--fw-500);
   display: flex;
   justify-content: flex-start;
@@ -615,7 +637,7 @@ body {
 
 .join-img {
   width: 100%;
-  max-width: 55%;
+  max-width: 99%;
   margin: 0 auto;
 }
 
@@ -721,7 +743,7 @@ body {
 
 .mundial-card .card-link {
   color: var(--orange-web);
-  font-family: var(--ff-rubik);
+  font-family: var(--ff-poppins);
   font-weight: var(--fw-500);
   display: flex;
   justify-content: flex-start;
@@ -826,10 +848,26 @@ body {
 }
 
 .egg-item .egg-number {
-  font-size: 100px;
+  font-size: 120px;
   text-align: center;
   color: var(--white);
-  margin: 0;
+  margin-top: -19%;
+  display: inline-block;
+}
+
+.egg-item .egg-number-2 {
+  font-size: 120px;
+  text-align: center;
+  color: var(--white);
+  margin-top: -2%;
+  display: inline-block;
+}
+
+.egg-item .egg-number-3 {
+  font-size: 120px;
+  text-align: center;
+  color: var(--white);
+  margin-top: -2%;
   display: inline-block;
 }
 
@@ -1092,7 +1130,7 @@ body {
 
 .footer-text {
   color: var(--silver-chalice);
-  font-family: var(--ff-rubik);
+  font-family: var(--ff-poppins);
   line-height: 1.8;
   margin-bottom: 30px;
 }
@@ -1143,7 +1181,7 @@ body {
 
 .footer-link {
   color: var(--silver-chalice);
-  font-family: var(--ff-rubik);
+  font-family: var(--ff-poppins);
   padding-block: 10px;
   transition: var(--transition);
 }
@@ -1160,14 +1198,14 @@ body {
 .footer .contact-item span {
   display: inline-block;
   color: var(--cultured);
-  font-family: var(--ff-rubik);
+  font-family: var(--ff-poppins);
   font-weight: var(--fw-500);
 }
 
 .footer .contact-link {
   display: inline-block;
   color: var(--silver-chalice);
-  font-family: var(--ff-rubik);
+  font-family: var(--ff-poppins);
   font-weight: var(--fw-500);
 }
 
@@ -1182,7 +1220,7 @@ body {
 
 .copyright {
   color: var(--silver-chalice);
-  font-family: var(--ff-rubik);
+  font-family: var(--ff-poppins);
   line-height: 1.7;
   text-align: center;
 }
@@ -1965,9 +2003,9 @@ body {
   left: 68%;
 }
 
-@media screen and (max-width: 568px){
+@media screen and (max-width: 768px){
   .container__bg {
-    height: 100vh;
+    height: 70vh;
     background-image: url("../images/fondo-mregg.png");
     background-size: cover;
     position: relative;
@@ -1979,4 +2017,71 @@ body {
 .about-text-2 {
   margin-top: 5% ;
   margin-bottom: 5%;
+}
+
+.inline-title h3,
+.inline-title p {
+  display: inline;
+}
+
+.mundial .highlight {
+  display: inline;
+  color: var(--yellow);
+  font-weight: 900;
+}
+
+.highlight-2 {
+  display: inline;
+  color: var(--yellow);
+  font-weight: 900;
+}
+
+/* Estilos para pantallas de 768px o menos */
+@media (max-width: 768px) {
+  .mundial-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mundial-logo {
+    margin-bottom: 20px;
+  }
+
+  .about-text-2 {
+    text-align: center;
+  }
+}
+
+/* Estilos para pantallas de 769px o más */
+@media (min-width: 769px) {
+  .mundial-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .mundial-logo {
+    margin-right: 20px;
+  }
+
+  .about-text-2 {
+    flex: 1;
+    text-align: left;
+  }
+}
+
+/* Estilos comunes */
+.mundial-content {
+  display: flex;
+}
+
+.mundial-logo {
+  width: 150px;
+  height: 150px;
+}
+
+.download-icon {
+  font-size: 20px; 
+  display: inline-block;
+  vertical-align: top;
 }
