@@ -2212,6 +2212,8 @@ textarea {
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
   justify-content: center;
+  border: none;
+  width:100%;
 }
 
 .submit-btn:hover {
@@ -2278,23 +2280,6 @@ font-style: normal;
   transform: translateY(-50%) rotate(-45deg);
 }
 
-
-/* Estilos existentes para pantallas grandes */
-.fondo-beneficios {
-  /* ... */
-}
-
-.fondo-beneficios img {
-  /* ... */
-}
-
-.beneficios-title {
-  /* ... */
-}
-
-.arrow-icon {
-  /* ... */
-}
 
 /* Para pantallas menores a 1024px */
 @media (max-width: 1024px) {
