@@ -61,7 +61,7 @@
    * spacing
    */
 
-  --section-padding: 40px;
+  --section-padding: 20px;
 }
 
 /*-----------------------------------*\
@@ -169,7 +169,6 @@ body {
   line-height: 1.3;
 }
 
-.section-text,
 .card-text,
 .card-subtitle {
   font-family: var(--ff-poppins);
@@ -178,6 +177,38 @@ body {
   line-height: 1.8;
   font-weight: 500;
   text-align: justify;
+}
+
+.section-text {
+  font-family: var(--ff-poppins);
+  color: var(--black);
+  font-size: var(--fs-6);
+  line-height: 1.8;
+  font-weight: 500;
+  text-align: center;
+  word-wrap: break-word; 
+  overflow-wrap: break-word; 
+}
+
+@media (max-width: 768px) {
+  .section-text {
+    font-size: calc(var(--fs-6) - 2px); 
+    padding: 0 10px; 
+  }
+}
+
+
+@media (max-width: 500px) {
+  .section-text {
+    font-size: calc(var(--fs-6) - 4px); 
+  }
+}
+
+
+@media (max-width: 400px) {
+  .section-text {
+    font-size: calc(var(--fs-6) - 6px); 
+  }
 }
 
 .vector-line {
@@ -978,7 +1009,7 @@ body {
   font-size: var(--fs-5);
   font-weight: 700;
   margin-top: 2em;
-
+  text-align: center;
  }
 
  .register-content .section-text {
@@ -2205,4 +2236,142 @@ font-style: italic;
 input[type=checkbox]:checked + label {
 color: #f00;
 font-style: normal;
+}
+
+.fondo-beneficios {
+  background-color: #e6e7e9;
+  height: 50vh;
+  position: relative;
+  z-index: 0;
+  overflow: visible;
+  width: 100%;
+}
+
+.fondo-beneficios img {
+  position: absolute;
+  right: 0%;
+  bottom: 0%; 
+  z-index: 1; 
+  height: auto;  
+  width: auto;
+  max-width: 60%; 
+}
+
+.beneficios-title {
+  position: absolute;
+  font-size: 15vh; 
+  color: white;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+
+.arrow-icon {
+  position: absolute;
+  color: black;
+  font-size: 15vh;
+  z-index: 2;
+  left: calc(50% - 50vh);
+  top: 30%;
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+
+/* Estilos existentes para pantallas grandes */
+.fondo-beneficios {
+  /* ... */
+}
+
+.fondo-beneficios img {
+  /* ... */
+}
+
+.beneficios-title {
+  /* ... */
+}
+
+.arrow-icon {
+  /* ... */
+}
+
+/* Para pantallas menores a 1024px */
+@media (max-width: 1024px) {
+  .fondo-beneficios img {
+    max-width: 80%;
+  }
+
+  .beneficios-title {
+    font-size: 12vh;
+  }
+
+  .arrow-icon {
+    font-size: 12vh;
+    left: calc(50% - 35vh);
+  }
+}
+
+/* Para pantallas menores a 768px */
+@media (max-width: 768px) {
+  .fondo-beneficios img {
+    max-width: 80%;
+  }
+
+  .beneficios-title {
+    font-size: 10vh;
+  }
+
+  .arrow-icon {
+    font-size: 10vh;
+    left: calc(50% - 30vh);
+  }
+}
+
+/* Para pantallas menores a 576px */
+@media (max-width: 576px) {
+  .fondo-beneficios img {
+    max-width: 80%;
+  }
+
+  .beneficios-title {
+    font-size: 8vh;
+  }
+
+  .arrow-icon {
+    font-size: 8vh;
+    left: calc(50% - 25vh);
+  }
+}
+
+/* Para pantallas menores a 500px */
+@media (max-width: 500px) {
+  .fondo-beneficios img {
+    max-width: 100%;
+  }
+
+  .beneficios-title {
+    font-size: 6vh;
+  }
+
+  .arrow-icon {
+    font-size: 6vh;
+    left: calc(50% - 20vh);
+  }
+}
+
+/* Para pantallas menores a 400px */
+@media (max-width: 400px) {
+  .fondo-beneficios img {
+    max-width: 100%;
+  }
+
+  .beneficios-title {
+    font-size: 5vh;
+  }
+
+  .arrow-icon {
+    font-size: 5vh;
+    left: calc(50% - 15vh);
+  }
 }
