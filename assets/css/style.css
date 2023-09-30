@@ -104,6 +104,7 @@ html {
 
 body {
   background: var(--white);
+  overflow-x: hidden;
 }
 
 /*-----------------------------------*\
@@ -245,8 +246,8 @@ body {
   right: 0;
   font-size: 30px;
   padding: 5px;
-  background: var(--rich-black-fogra-29);
-  color: var(--white);
+  background: transparent;
+  color: black;
 }
 
 .navbar .logo {
@@ -1859,4 +1860,15 @@ body {
 
 .cta-banner {
   left: 68%;
+}
+
+@media screen and (max-width: 568px){
+  .container__bg {
+    height: 100vh;
+    background-image: url("../images/fondo-mregg.png");
+    background-size: cover;
+    position: relative;
+    filter: brightness();
+    overflow-y: hidden;
+  }
 }
