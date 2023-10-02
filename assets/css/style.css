@@ -125,6 +125,7 @@ body {
   font-weight: 600;
   border-style: none;
   margin: 0 auto;
+  max-width: 100%;
 }
 
  .btn-secondary {
@@ -159,7 +160,7 @@ body {
 
 .h2 {
   font-size: var(--fs-1);
-  line-height: 1.6;
+  line-height: 1;
   font-weight: 600;
 }
 
@@ -185,7 +186,7 @@ body {
   font-size: var(--fs-6);
   line-height: 1.8;
   font-weight: 500;
-  text-align: center;
+  text-align: justify;
   word-wrap: break-word; 
   overflow-wrap: break-word; 
 }
@@ -385,7 +386,7 @@ body {
 
 .about-logo {
   display: block;
-  width: 100px;
+  width: 180px;
 }
 
 .about-img-2 {
@@ -667,7 +668,7 @@ body {
 }
 
 .join-img {
-  width: 100%;
+  max-width: 100%;
   max-width: 99%;
   margin: 0 auto;
 }
@@ -1015,7 +1016,7 @@ body {
  .register-content .section-text {
   font-size: var(--fs-5);
   font-weight: 400;
-
+  margin-top: 20px;
  }
 
 
@@ -1029,7 +1030,7 @@ body {
   background-color: var(--yellow);
   border-radius: 10em;
   margin-bottom: 2em;
-  margin-top: 1em;
+  margin-top: 0.5em;
  }
 
 
@@ -1481,9 +1482,6 @@ body {
 }
 
 @media (max-width: 768px) {
-  .about-logo {
-    display: none !important;
-  }
 
   .register-content {
     width: 90%;
@@ -1829,7 +1827,7 @@ body {
  * responsive for larger than 1200px screen
  */
 
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   /**
    * REUSED STYLE
    */
@@ -1939,8 +1937,14 @@ body {
     justify-content: space-evenly;
   }
 
+  .flex-1024{
+    display: flex !important;
+  }
+  .flex-1023{
+    display: none !important;
+  }
 
-
+}
 /* DEMO */
 
 
@@ -1966,7 +1970,7 @@ body {
  
  .footer-cta-title {
   display: inline-block;
-  font-size: 2.5em;
+  font-size: 3.5em;
   margin-bottom: 0;
   font-weight: 300;
  }
@@ -1986,7 +1990,6 @@ body {
   margin-right: 1em;
  }
  
-}
 
 /**
    * DEPARTMENTS
@@ -2034,15 +2037,105 @@ body {
   left: 68%;
 }
 
-@media screen and (max-width: 768px){
+.fondo-beneficios {
+  background-color: #e6e7e9;
+  height: 50vh;
+  position: relative;
+  z-index: 0;
+  overflow: visible;
+  width: 100%;
+}
+
+.fondo-beneficios img {
+  position: absolute;
+  right: 0%;
+  bottom: 0%; 
+  z-index: 1; 
+  height: auto;  
+  width: auto;
+  max-width: 60%; 
+}
+
+@media screen and (max-width: 1023px){
   .container__bg {
-    height: 70vh;
-    background-image: url("../images/fondo-mregg.png");
+    height: 100vh;
+    background-image: url("../images/Portada.png");
     background-size: cover;
     position: relative;
     filter: brightness();
-    overflow-y: hidden;
+    overflow-y: hidden !important;
   }
+  .container__bg--circle .hero-content {
+    position: absolute;
+    top: 38vh;
+    left: 40%;
+    transform: translate(-30%, -30%);
+    width: 100%;
+  }
+  .container__bg--circle img {
+    width: 50%;
+    top: 30%;
+  }
+  .flex-1024{
+    display: none !important;
+  }
+  .flex-1023{
+    display: block !important;
+  }
+  .h1-2{
+    position: relative;
+    top: 60vh !important;
+    left: 3vh !important;
+  }
+  .container__bg--circle h1 {
+    font-size: 40px;
+    color: var(--white);
+    font-weight: 600;
+
+  }
+
+  .container__bg--circle .highlight {
+    color: var(--yellow);
+    display: inline;
+    font-weight: 600;
+    font-size: 40px;
+  }
+  .fondo-beneficios {
+    background-color: #e6e7e9;
+    height: 30vh;
+    position: relative;
+    z-index: 0;
+    overflow: visible;
+    width: 100%;
+  }
+  
+  .fondo-beneficios img {
+    position: absolute;
+    right: 0%;
+    bottom: 0%; 
+    z-index: 1; 
+    height: auto;  
+    width: auto;
+    max-width: 100%; 
+  }
+
+  .departments-list li::after {
+    content: "";
+    position: absolute;
+    width: 85%; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    height: 1px;
+    background-color: #000;
+    pointer-events: none;
+}
+
+
+  .departments-list li:last-child::after {
+    display: none;
+  }
+
+
 }
 
 .about-text-2 {
@@ -2240,25 +2333,6 @@ color: #f00;
 font-style: normal;
 }
 
-.fondo-beneficios {
-  background-color: #e6e7e9;
-  height: 50vh;
-  position: relative;
-  z-index: 0;
-  overflow: visible;
-  width: 100%;
-}
-
-.fondo-beneficios img {
-  position: absolute;
-  right: 0%;
-  bottom: 0%; 
-  z-index: 1; 
-  height: auto;  
-  width: auto;
-  max-width: 60%; 
-}
-
 .beneficios-title {
   position: absolute;
   font-size: 15vh; 
@@ -2283,88 +2357,130 @@ font-style: normal;
 
 /* Para pantallas menores a 1024px */
 @media (max-width: 1024px) {
-  .fondo-beneficios img {
-    max-width: 80%;
-  }
 
   .beneficios-title {
-    font-size: 12vh;
+    font-size: 13vh;
+    top: 90%;
+    left: 40%
   }
 
   .arrow-icon {
     font-size: 12vh;
-    left: calc(50% - 35vh);
+    left: 20%;
+    top: 75%;
   }
+  .footer-cta-title {
+    font-size: 2.4em;
+   }
+   .footer-cta-text {
+    font-size: 6.5em;
+    text-align: center;
+   }
 }
 
 /* Para pantallas menores a 768px */
 @media (max-width: 768px) {
-  .fondo-beneficios img {
-    max-width: 80%;
-  }
 
   .beneficios-title {
-    font-size: 10vh;
+    font-size: 11vh;
+    top: 90%;
+    left: 40%
   }
 
   .arrow-icon {
     font-size: 10vh;
-    left: calc(50% - 30vh);
+    left: 20%;
+    top: 75%;
   }
+  .footer-cta-title {
+    font-size: 2.2em;
+   }
+   .footer-cta-text {
+    font-size: 5.5em;
+    text-align: center;
+   }
+   .footer-background {
+  --bottom-breakpoint: 89%;
+ }
 }
 
 /* Para pantallas menores a 576px */
 @media (max-width: 576px) {
-  .fondo-beneficios img {
-    max-width: 80%;
-  }
 
   .beneficios-title {
-    font-size: 8vh;
+    font-size: 9vh;
+    top: 90%;
+    left: 40%
   }
 
   .arrow-icon {
     font-size: 8vh;
-    left: calc(50% - 25vh);
+    left: 20%;
+    top: 75%;
   }
+  .footer-cta-title {
+    font-size: 2em;
+   }
+   .footer-cta-text {
+    font-size: 4.5em;
+    text-align: center;
+   }
+   .footer-background {
+  --bottom-breakpoint: 91%;
+ }
 }
 
 /* Para pantallas menores a 500px */
 @media (max-width: 500px) {
-  .fondo-beneficios img {
-    max-width: 100%;
-  }
 
   .beneficios-title {
-    font-size: 6vh;
+    font-size: 7vh;
+    top: 90%;
+    left: 40%
   }
 
   .arrow-icon {
     font-size: 6vh;
-    left: calc(50% - 20vh);
+    left: 20%;
+    top: 75%;
   }
+  .footer-cta-title {
+    font-size: 1.8em;
+   }
+   .footer-cta-text {
+    font-size: 3.5em;
+    text-align: center;
+   }
+   .footer-background {
+  --bottom-breakpoint: 93%;
+ }
 }
 
 /* Para pantallas menores a 400px */
 @media (max-width: 400px) {
-  .fondo-beneficios img {
-    max-width: 100%;
-  }
 
   .beneficios-title {
-    font-size: 5vh;
+    font-size: 6vh;
+    top: 90%;
+    left: 40%
   }
 
   .arrow-icon {
     font-size: 5vh;
-    left: calc(50% - 15vh);
+    left: 20%;
+    top: 75%;
   }
+  .footer-cta-title {
+    font-size: 1.6em;
+   }
+   .footer-cta-text {
+    font-size: 3em;
+    text-align: center;
+   }
+   .footer-background {
+  --bottom-breakpoint: 95%;
+ }
 }
-
-
-
-
-
 
 
 
@@ -2400,5 +2516,11 @@ font-style: normal;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+  .departments-list li:nth-child(2)::after {
+    display: none;
   }
 }
