@@ -100,12 +100,17 @@ J button {
 
 html {
   scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden !important;
 }
 
 body {
   background: var(--white);
   overflow-x: hidden !important;
   font-family: var(--ff-poppins);
+  margin: 0;
+  padding: 0;
 }
 
 /*-----------------------------------*\
@@ -420,7 +425,7 @@ body {
 
   }
   .about-text {
-    margin-left: 45% !important;
+    margin-left: 50% !important;
     margin-bottom: 10%;
   }
   .h1 {
@@ -441,7 +446,7 @@ body {
 
   }
   .about-text {
-    margin-left: 40% !important;
+    margin-left: 45% !important;
     margin-bottom: 10%;
   }
   .h1 {
@@ -462,7 +467,7 @@ body {
 
   }
   .about-text {
-    margin-left: 37% !important;
+    margin-left: 40% !important;
     margin-bottom: 10%;
   }
   .h1 {
@@ -483,7 +488,7 @@ body {
 
   }
   .about-text {
-    margin-left: 35% !important;
+    margin-left: 37% !important;
     margin-bottom: 10%;
   }
   .h1 {
@@ -504,7 +509,7 @@ body {
 
   }
   .about-text {
-    margin-left: 25% !important;
+    margin-left: 30% !important;
     margin-bottom: 10%;
   }
   .h1 {
