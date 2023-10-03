@@ -166,7 +166,7 @@ body {
 
 .h3 {
   color: var(--onyx);
-  font-size: var(--fs-4);
+  font-size: calc(var(--fs-4) - 2px);
   line-height: 1.3;
 }
 
@@ -201,14 +201,14 @@ body {
 
 @media (max-width: 500px) {
   .section-text {
-    font-size: calc(var(--fs-6) - 4px); 
+    font-size: calc(var(--fs-6) - 2px); 
   }
 }
 
 
 @media (max-width: 400px) {
   .section-text {
-    font-size: calc(var(--fs-6) - 6px); 
+    font-size: calc(var(--fs-6) - 2px); 
   }
 }
 
@@ -448,7 +448,7 @@ body {
 @media screen and (max-width: 410px) and (min-width: 360px){
   .about-img-2 {
     width: 12rem; 
-    left: -55%; 
+    left: -45%; 
   }
   .about-banner-2 {
     width: 28vh; 
@@ -458,7 +458,7 @@ body {
 
   }
   .about-text {
-    margin-left: 35% !important;
+    margin-left: 37% !important;
     margin-bottom: 10%;
   }
   .h1 {
@@ -466,7 +466,7 @@ body {
   }
 }
 
-@media screen and (max-width: 460px) and (min-width: 411px){
+@media screen and (max-width: 468px) and (min-width: 411px){
   .about-img-2 {
     width: 15rem; 
     left: -55%; 
@@ -613,7 +613,7 @@ body {
 
 .departments-card img {
   margin: 0 auto;
-  width: 50%;
+  width: 40%;
   height: 80%;
   object-fit: cover;
   transition: var(--transition);
@@ -668,8 +668,7 @@ body {
 }
 
 .join-img {
-  max-width: 100%;
-  max-width: 99%;
+  max-width: 65%;
   margin: 0 auto;
 }
 
@@ -1298,6 +1297,38 @@ body {
   color: var(--orange-web);
 }
 
+
+/*-----------------------------------*\
+ * #COPY
+\*-----------------------------------*/
+
+.copy-container {
+  background: #2d1713;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.copy-block {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copy-light {
+  font-size: 1em;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.logo-copy {
+  width: 40px;
+  height: auto;
+  margin-left: 5px; 
+}
+
+
 /*-----------------------------------*\
  * #MEDIA QUERIES
 \*-----------------------------------*/
@@ -1833,9 +1864,10 @@ body {
    */
 
   .container__bg {
+    width: auto;
     height: 100vh;
     background-image: url("../images/fondo-mregg.png");
-    background-size: cover;
+    background-size: auto;
     position: relative;
     filter: brightness();
     overflow-y: hidden;
@@ -2063,7 +2095,7 @@ body {
     background-size: cover;
     position: relative;
     filter: brightness();
-    overflow-y: hidden !important;
+    overflow-x: hidden !important;
   }
   .container__bg--circle .hero-content {
     position: absolute;
@@ -2111,7 +2143,7 @@ body {
   
   .fondo-beneficios img {
     position: absolute;
-    right: 0%;
+    right: -10%;
     bottom: 0%; 
     z-index: 1; 
     height: auto;  
@@ -2247,7 +2279,7 @@ input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid
   color: #999;
   padding: 1.3rem 30px 1rem 30px;
   position: absolute;
-  top: 10px;
+  top: -5px;
   left: 0;
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
@@ -2261,7 +2293,7 @@ input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid
 
 input,
 textarea {
-  padding: 30px;
+  padding: 15px;
   border: 1px solid #eeb231;
   width: 100%;
   font-size: 1.5rem;
@@ -2360,14 +2392,14 @@ font-style: normal;
 
   .beneficios-title {
     font-size: 13vh;
-    top: 90%;
+    top: 85%;
     left: 40%
   }
 
   .arrow-icon {
     font-size: 12vh;
-    left: 20%;
-    top: 75%;
+    left: 25%;
+    top: 55%;
   }
   .footer-cta-title {
     font-size: 2.4em;
@@ -2376,32 +2408,40 @@ font-style: normal;
     font-size: 6.5em;
     text-align: center;
    }
+   .footer-title img {
+    width: 180px;
+    margin-right: 1em;
+    }
 }
 
 /* Para pantallas menores a 768px */
 @media (max-width: 768px) {
 
   .beneficios-title {
-    font-size: 11vh;
+    font-size: 10vh;
     top: 90%;
-    left: 40%
+    left: 45%
   }
 
   .arrow-icon {
-    font-size: 10vh;
-    left: 20%;
-    top: 75%;
+    font-size: 8vh;
+    left: 30%;
+    top: 70%;
   }
   .footer-cta-title {
-    font-size: 2.2em;
+    font-size: 2em;
    }
    .footer-cta-text {
-    font-size: 5.5em;
+    font-size: 4.5em;
     text-align: center;
    }
    .footer-background {
-  --bottom-breakpoint: 89%;
+  --bottom-breakpoint: 91%;
  }
+ .footer-title img {
+  width: 150px;
+  margin-right: 1em;
+  }
 }
 
 /* Para pantallas menores a 576px */
@@ -2410,12 +2450,12 @@ font-style: normal;
   .beneficios-title {
     font-size: 9vh;
     top: 90%;
-    left: 40%
+    left: 45%
   }
 
   .arrow-icon {
     font-size: 8vh;
-    left: 20%;
+    left: 30%;
     top: 75%;
   }
   .footer-cta-title {
@@ -2428,6 +2468,10 @@ font-style: normal;
    .footer-background {
   --bottom-breakpoint: 91%;
  }
+ .footer-title img {
+  width: 150px;
+  margin-right: 1em;
+  }
 }
 
 /* Para pantallas menores a 500px */
@@ -2436,12 +2480,12 @@ font-style: normal;
   .beneficios-title {
     font-size: 7vh;
     top: 90%;
-    left: 40%
+    left: 45%
   }
 
   .arrow-icon {
     font-size: 6vh;
-    left: 20%;
+    left: 30%;
     top: 75%;
   }
   .footer-cta-title {
@@ -2454,6 +2498,10 @@ font-style: normal;
    .footer-background {
   --bottom-breakpoint: 93%;
  }
+ .footer-title img {
+  width: 150px;
+  margin-right: 1em;
+  }
 }
 
 /* Para pantallas menores a 400px */
@@ -2462,12 +2510,12 @@ font-style: normal;
   .beneficios-title {
     font-size: 6vh;
     top: 90%;
-    left: 40%
+    left: 45%
   }
 
   .arrow-icon {
     font-size: 5vh;
-    left: 20%;
+    left: 30%;
     top: 75%;
   }
   .footer-cta-title {
@@ -2480,6 +2528,10 @@ font-style: normal;
    .footer-background {
   --bottom-breakpoint: 95%;
  }
+ .footer-title img {
+  width: 150px;
+  margin-right: 1em;
+  }
 }
 
 
