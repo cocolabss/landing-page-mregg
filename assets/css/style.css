@@ -191,7 +191,7 @@ body {
   font-size: var(--fs-6);
   line-height: 1.8;
   font-weight: 500;
-  text-align: center;
+  text-align: justify;
   word-wrap: break-word;
   overflow-wrap: break-word;
   margin: 0 auto; 
@@ -408,14 +408,37 @@ body {
 }
 
 .about-text {
-  margin-left: 40% !important;
+  margin-left: 50% !important;
   margin-bottom: 10%;
+}
+
+
+
+@media screen and (max-width: 1023px) and (min-width: 769px){
+  .about-img-2 {
+    width: 20rem; 
+    left: -35%; 
+  }
+  .about-banner-2 {
+    width: 35vh; 
+    height: 35vh; 
+    background-color: #eeb231; 
+    left: 25%; 
+
+  }
+  .about-text {
+    margin-left: 75% !important;
+    margin-bottom: 10%;
+  }
+  .h1 {
+    font-size: 50px;
+  }
 }
 
 @media screen and (max-width: 768px) and (min-width: 569px){
   .about-img-2 {
-    width: 20rem; 
-    left: -55%; 
+    width: 18rem; 
+    left: -35%; 
   }
   .about-banner-2 {
     width: 38vh; 
@@ -425,28 +448,28 @@ body {
 
   }
   .about-text {
-    margin-left: 50% !important;
+    margin-left: 75% !important;
     margin-bottom: 10%;
   }
   .h1 {
-    font-size: 40px;
+    font-size: 48px;
   }
 }
 
 @media screen and (max-width: 568px) and (min-width: 469px){
   .about-img-2 {
-    width: 18rem; 
-    left: -55%; 
+    width: 14rem; 
+    left: -40%; 
   }
   .about-banner-2 {
-    width: 32vh; 
-    height: 32vh; 
+    width: 35vh; 
+    height: 35vh; 
     background-color: #eeb231; 
     left: 20%; 
 
   }
   .about-text {
-    margin-left: 45% !important;
+    margin-left: 70% !important;
     margin-bottom: 10%;
   }
   .h1 {
@@ -454,20 +477,41 @@ body {
   }
 }
 
-@media screen and (max-width: 410px) and (min-width: 360px){
+@media screen and (max-width: 389px) and (min-width: 360px){
   .about-img-2 {
-    width: 12rem; 
-    left: -45%; 
+    width: calc(11rem - 20px); 
+    left: calc(-50% + 20px); 
   }
   .about-banner-2 {
-    width: 28vh; 
-    height: 28vh; 
+    width: calc(30vh - 20px); 
+    height: calc(30vh - 20px); 
     background-color: #eeb231; 
     left: 20%; 
 
   }
   .about-text {
-    margin-left: 40% !important;
+    margin-left: calc(55% + 20px) !important;
+    margin-bottom: 10%;
+  }
+  .h1 {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 415px) and (min-width: 390px){
+  .about-img-2 {
+    width: calc(12.2rem - 10px); 
+    left: calc(-40% + 10px); 
+  }
+  .about-banner-2 {
+    width: calc(30vh - 20px); 
+    height: calc(30vh - 20px); 
+    background-color: #eeb231; 
+    left: 20%; 
+
+  }
+  .about-text {
+    margin-left: calc(50% + 20px) !important;
     margin-bottom: 10%;
   }
   .h1 {
@@ -475,30 +519,9 @@ body {
   }
 }
 
-@media screen and (max-width: 468px) and (min-width: 411px){
+@media screen and (max-width: 468px) and (min-width: 416px){
   .about-img-2 {
-    width: 15rem; 
-    left: -55%; 
-  }
-  .about-banner-2 {
-    width: 28vh; 
-    height: 28vh; 
-    background-color: #eeb231; 
-    left: 20%; 
-
-  }
-  .about-text {
-    margin-left: 37% !important;
-    margin-bottom: 10%;
-  }
-  .h1 {
-    font-size: 32px;
-  }
-}
-
-@media screen and (max-width: 359px) and (min-width: 300px){
-  .about-img-2 {
-    width: 12rem; 
+    width: 13rem; 
     left: -55%; 
   }
   .about-banner-2 {
@@ -509,7 +532,28 @@ body {
 
   }
   .about-text {
-    margin-left: 30% !important;
+    margin-left: 62% !important;
+    margin-bottom: 10%;
+  }
+  .h1 {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 359px) and (min-width: 280px){
+  .about-img-2 {
+    width: 10rem; 
+    left: -55%; 
+  }
+  .about-banner-2 {
+    width: 25vh; 
+    height: 25vh; 
+    background-color: #eeb231; 
+    left: 20%; 
+
+  }
+  .about-text {
+    margin-left: 55% !important;
     margin-bottom: 10%;
   }
   .h1 {
@@ -2161,7 +2205,7 @@ body {
     z-index: 1; 
     height: auto;  
     width: auto;
-    max-width: 100%; 
+    max-width: 95%; 
   }
 
   .departments-list li::after {
@@ -2189,6 +2233,19 @@ body {
     margin-top: 15vh !important;
    }
 
+
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px){
+  .fondo-beneficios img {
+    position: absolute;
+    right: -10%;
+    bottom: 0%; 
+    z-index: 1; 
+    height: auto;  
+    width: auto;
+    max-width: 85%; 
+  }
 }
 
 .about-text-2 {
@@ -2412,7 +2469,7 @@ font-style: normal;
 
   .beneficios-title {
     font-size: 13vh;
-    top: 85%;
+    top: 83%;
     left: 40%
   }
 
@@ -2439,14 +2496,14 @@ font-style: normal;
 
   .beneficios-title {
     font-size: 10vh;
-    top: 90%;
+    top: 87%;
     left: 45%
   }
 
   .arrow-icon {
     font-size: 8vh;
     left: 30%;
-    top: 70%;
+    top: 67%;
   }
   .footer-cta-title {
     font-size: 2em;
@@ -2469,14 +2526,14 @@ font-style: normal;
 
   .beneficios-title {
     font-size: 9vh;
-    top: 90%;
+    top: 87%;
     left: 45%
   }
 
   .arrow-icon {
     font-size: 8vh;
     left: 30%;
-    top: 75%;
+    top: 72%;
   }
   .footer-cta-title {
     font-size: 2em;
@@ -2556,7 +2613,11 @@ font-style: normal;
 
 @media (max-width: 460px) {
   .copy-light {
-    font-size: 0.8em;
+    font-size: 0.7em;
+  }
+  .logo-copy {
+    width: 30px;
+    height: auto;
   }
 }
 
@@ -2600,5 +2661,51 @@ font-style: normal;
 @media screen and (min-width: 768px) and (max-width: 1024px){
   .departments-list li:nth-child(2)::after {
     display: none;
+  }
+}
+
+@media screen and (max-width: 1400px) and (min-width: 1024px){
+  .about-img-2 {
+    width: 24rem; 
+    left: -45%; 
+  }
+  .about-banner-2 {
+    width: 50vh; 
+    height: 50vh; 
+    background-color: #eeb231; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .about-text {
+    margin-left: 55% !important;
+    margin-bottom: 10%;
+  }
+  .h1 {
+    font-size: 52px;
+  }
+}
+
+@media screen and (max-width: 1800px) and (min-width: 1401px){
+  .about-img-2 {
+    width: 24rem; 
+    left: -50%; 
+  }
+  .about-banner-2 {
+    width: 50vh; 
+    height: 50vh; 
+    background-color: #eeb231; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .about-text {
+    margin-left: 55% !important;
+    margin-bottom: 10%;
+  }
+  .h1 {
+    font-size: 65px;
   }
 }
