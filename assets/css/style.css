@@ -2190,16 +2190,18 @@ body {
 
 @media screen and (max-width: 1023px){
   .container__bg {
-    height: 100vh;
+    width: 100vw; /* Ocupa todo el ancho de la pantalla */
+    height: 100vh; /* Ocupa todo el alto de la pantalla */
     background-image: url("../images/Portada.png");
-    background-size: cover;
+    background-size: cover; /* La imagen cubrirá todo el contenedor */
+    background-position: center center; /* Centra la imagen tanto horizontal como verticalmente */
     position: relative;
-    filter: brightness();
     overflow-x: hidden !important;
-  }
+}
+
   .container__bg--circle .hero-content {
     position: absolute;
-    top: 38vh;
+    top: 35vh;
     left: 40%;
     transform: translate(-30%, -30%);
     width: 100%;
@@ -2216,7 +2218,7 @@ body {
   }
   .h1-2{
     position: relative;
-    top: 60vh !important;
+    top: 50vh !important;
     left: 3vh !important;
   }
   .container__bg--circle h1 {
@@ -2751,4 +2753,11 @@ font-style: normal;
   .h1 {
     font-size: 65px;
   }
+}
+
+@media screen and (min-width: 768px) {
+  .item-egg-middle {
+    margin-top: -7%;
+  }
+  
 }
