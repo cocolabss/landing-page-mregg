@@ -36,12 +36,11 @@ try {
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port = 587;
 
-    $mail->Username = "cocolabs.ventas@gmail.com";
-    $mail->Password = "wojzkqqqwbyqiibw"; 
+    $mail->Username = "testingmregg@gmail.com";
+    $mail->Password = "yxsnhxylbkreugxt"; 
 
     $mail->setFrom($email, $name);
-    // $mail->addAddress("cocolabs.ventas@gmail.com", "Coco Labs");
-    $mail->addAddress("jeissong2002@gmail.com", "Jeison Gómez");
+    $mail->addAddress("info@mregg.info", "Info Mr. Egg");
 
     $mail->Subject = "Mensaje de contacto de $name";
     $mail->Body = "Nombre: $name\nCorreo: $email\nTeléfono: $phone\n\nMensaje:\n$message";
