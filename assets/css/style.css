@@ -983,12 +983,12 @@ body {
   padding: 5% 5% 0 5%;
   width: 100%;
   display: flex;
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
 }
 
 .egg-lower-2 {
-  margin-left: 19%; 
-  margin-bottom: 15%;  /* Ajusta según lo necesario para obtener el espaciado deseado */
+  margin-left: 19% !important; 
+  margin-bottom: 15%; 
   z-index: 2;
 }
 
