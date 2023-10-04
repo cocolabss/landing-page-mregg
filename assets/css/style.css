@@ -882,7 +882,7 @@ body {
 }
 
 .egg-upper img {
-  width: 52%;
+  width: 62%;
   height: 50%;
   object-fit: cover;
   transition: var(--transition);
@@ -950,8 +950,13 @@ body {
   font-size: 120px;
   text-align: center;
   color: var(--white);
-  margin-top: -22%;
+  margin-top: -16%;
+  margin-bottom: 10%;
   display: inline-block;
+}
+
+.egg-item h4 {
+  font-size: 18px !important;
 }
 
 .egg-item .egg-number-2 {
@@ -972,7 +977,7 @@ body {
 
 .egg-lower-1 {
   margin-left: 9%; 
-  margin-top: -2%;
+  margin-top: -24%;
   z-index: 2;
 }
 
@@ -980,22 +985,32 @@ body {
   min-height: var(--egg-with);
   background: var(--yellow);
   border-radius: 50%;
-  padding: 5% 5% 0 5%;
+  padding: 0 5% 0 5%;
   width: 100%;
   display: flex;
   /* justify-content: flex-end; */
 }
 
 .egg-lower-2 {
-  margin-left: 19% !important; 
+  margin-left: 14.5% !important; 
   margin-bottom: 15%; 
   z-index: 2;
 }
 
 .egg-lower-3 {
   margin-left: 20%; 
-  margin-top: -2%;
+  margin-top: -14.4%;
   z-index: 2;
+}
+
+@media screen and (max-width: 768px) {
+  .egg-lower-1 {
+    margin-left: 5%;
+  }
+
+  .egg-lower-3 {
+    margin-left: 17%; 
+  }
 }
 
 /*-----------------------------------*\
