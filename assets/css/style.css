@@ -250,7 +250,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 4;
+  z-index: 7;
   transition: padding var(--transition);
 }
 
@@ -805,6 +805,12 @@ body {
   margin-bottom: 50px;
 }
 
+.mundial-list-2 {
+  display: grid;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
 .mundial-card {
   background: var(--yellow);
   max-width: 250px;
@@ -990,6 +996,17 @@ body {
   display: flex;
   /* justify-content: flex-end; */
 }
+
+.egg-lower-9 {
+  min-height: var(--egg-with);
+  background: var(--yellow);
+  border-radius: 50%;
+  width: 100%;
+  display: flex;
+  margin-top: 3%;
+  justify-content: center;
+}
+  
 
 .egg-lower-2 {
   margin-left: 14.5% !important; 
@@ -1571,6 +1588,10 @@ body {
     grid-template-columns: 1fr 1fr;
   }
 
+  .mundial-list-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+
   /**
    * INSTRUCTOR
    */
@@ -1924,6 +1945,10 @@ body {
     grid-template-columns: repeat(3, 1fr);
   }
 
+  .mundial-list-2 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
   .mundial-card {
     height: 100%;
     display: flex;
@@ -1997,8 +2022,17 @@ body {
     margin-top: 30px;
     max-width: 50%;
   }
+
+  .mundial .container-2 {
+    margin-top: -30px;
+    max-width: 68%;
+  }
   
   .mundial-list {
+    margin-top: 50px;
+  }
+
+  .mundial-list-2 {
     margin-top: 50px;
   }
 
@@ -2379,6 +2413,105 @@ body {
   display: inline-block;
   vertical-align: top;
 }
+
+
+/* BLOG */
+
+.blog {
+  background-color: #fff !important;
+}
+
+.blog-title {
+  text-align: center !important;
+}
+
+.open-modal-btn {
+  background-color: #2d1713;
+  border-radius: 10em;
+  margin-bottom: 2em;
+  margin-top: 0.5em;
+  color: #fff;
+  padding: 20px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 4;
+  left: 0;
+  top: 8%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 80%;
+  max-height: 84%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  text-align: center;
+  overflow-y: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .modal-content {
+    max-width: 90%;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .modal-content {
+    max-width: 40%;
+  }
+}
+
+.open-button {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.close {
+  color: #888;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.close:hover {
+  color: #000;
+}
+
+.modal-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.modal-body {
+  padding: 20px;
+}
+
+.modal-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-image img {
+  max-width: 150px;
+  height: auto;
+}
+
 
 /* CONTACTO */
 
