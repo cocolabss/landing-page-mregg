@@ -451,179 +451,33 @@ body {
 
 @media screen and (max-width: 1023px) {
   .about-img-2 {
-    /* Ajuste de ancho y posición para adaptarse a pantallas pequeñas y medianas */
-    width: calc(10rem + 6vw);
-    left: calc(-50% + 6vw);
+    width: calc(14rem + 4vw);
+    left: calc(-55% + 3vw + 2vh);
   }
   .about-banner-2 {
-    /* Dimensiones ajustadas para mantener la proporción y visibilidad en pantallas pequeñas */
-    width: calc(28vh + 4vw);
-    height: calc(28vh + 4vw);
+    width: calc(32vh + 3vw);
+    height: calc(32vh + 3vw);
     background-color: #eeb231;
-    left: 15%;
+    left: 20%;
   }
   .about-text {
-    /* Ajuste de margen para asegurar la alineación y legibilidad del texto */
-    margin-left: calc(22% + 3vw) !important;
+    margin-left: calc(25% + 2vw) !important;
     margin-bottom: 10%;
   }
   .h1 {
-    /* Tamaño de fuente adaptable para diferentes tamaños de pantalla */
-    font-size: calc(20px + 1.5vw);
+    font-size: calc(22px + 1.5vw);
+  }
+
+  /* Estilos específicos para iPhone SE y dispositivos con dimensiones similares */
+  @media screen and (max-device-width: 414px) and (max-device-height: 736px), (max-device-width: 375px) and (max-device-height: 667px) {
+    .about-img-2 {
+      left: calc(-70% + 2vw + 1vh);
+    }
   }
 }
 
 
 
-
-
-/*
-@media screen and (max-width: 1023px) and (min-width: 769px){
-  .about-img-2 {
-    width: 16rem; 
-    left: -45%; 
-  }
-  .about-banner-2 {
-    width: 35vh; 
-    height: 35vh; 
-    background-color: #eeb231; 
-    left: 25%; 
-
-  }
-  .about-text {
-    margin-left: 75% !important;
-    margin-bottom: 10%;
-  }
-  .h1 {
-    font-size: 50px;
-  }
-}
-
-@media screen and (max-width: 768px) and (min-width: 569px){
-  .about-img-2 {
-    width: 18rem; 
-    left: -35%; 
-  }
-  .about-banner-2 {
-    width: 38vh; 
-    height: 38vh; 
-    background-color: #eeb231; 
-    left: 20%; 
-
-  }
-  .about-text {
-    margin-left: 75% !important;
-    margin-bottom: 10%;
-  }
-  .h1 {
-    font-size: 48px;
-  }
-}
-
-@media screen and (max-width: 568px) and (min-width: 469px){
-  .about-img-2 {
-    width: 14rem; 
-    left: -40%; 
-  }
-  .about-banner-2 {
-    width: 35vh; 
-    height: 35vh; 
-    background-color: #eeb231; 
-    left: 20%; 
-
-  }
-  .about-text {
-    margin-left: 70% !important;
-    margin-bottom: 10%;
-  }
-  .h1 {
-    font-size: 36px;
-  }
-}
-
-@media screen and (max-width: 389px) and (min-width: 360px){
-  .about-img-2 {
-    width: calc(11rem - 20px); 
-    left: calc(-50% + 20px); 
-  }
-  .about-banner-2 {
-    width: calc(30vh - 20px); 
-    height: calc(30vh - 20px); 
-    background-color: #eeb231; 
-    left: 20%; 
-
-  }
-  .about-text {
-    margin-left: calc(55% + 20px) !important;
-    margin-bottom: 10%;
-  }
-  .h1 {
-    font-size: 28px;
-  }
-}
-
-@media screen and (max-width: 415px) and (min-width: 390px){
-  .about-img-2 {
-    width: calc(12.2rem - 10px); 
-    left: calc(-40% + 10px); 
-  }
-  .about-banner-2 {
-    width: calc(30vh - 20px); 
-    height: calc(30vh - 20px); 
-    background-color: #eeb231; 
-    left: 20%; 
-
-  }
-  .about-text {
-    margin-left: calc(50% + 20px) !important;
-    margin-bottom: 10%;
-  }
-  .h1 {
-    font-size: 32px;
-  }
-}
-
-@media screen and (max-width: 468px) and (min-width: 416px){
-  .about-img-2 {
-    width: 13rem; 
-    left: -55%; 
-  }
-  .about-banner-2 {
-    width: 25vh; 
-    height: 25vh; 
-    background-color: #eeb231; 
-    left: 20%; 
-
-  }
-  .about-text {
-    margin-left: 62% !important;
-    margin-bottom: 10%;
-  }
-  .h1 {
-    font-size: 32px;
-  }
-}
-
-@media screen and (max-width: 359px) and (min-width: 280px){
-  .about-img-2 {
-    width: 10rem; 
-    left: -55%; 
-  }
-  .about-banner-2 {
-    width: 25vh; 
-    height: 25vh; 
-    background-color: #eeb231; 
-    left: 20%; 
-
-  }
-  .about-text {
-    margin-left: 55% !important;
-    margin-bottom: 10%;
-  }
-  .h1 {
-    font-size: 30px;
-  }
-} */
 
 
 
@@ -2902,51 +2756,6 @@ font-style: normal;
   }
 }
 
-/* @media screen and (max-width: 1400px) and (min-width: 1024px){
-  .about-img-2 {
-    width: 24rem; 
-    left: -45%; 
-  }
-  .about-banner-2 {
-    width: 50vh; 
-    height: 50vh; 
-    background-color: #eeb231; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-  }
-  .about-text {
-    margin-left: 55% !important;
-    margin-bottom: 10%;
-  }
-  .h1 {
-    font-size: 52px;
-  }
-}
-
-@media screen and (max-width: 1800px) and (min-width: 1401px){
-  .about-img-2 {
-    width: 24rem; 
-    left: -50%; 
-  }
-  .about-banner-2 {
-    width: 50vh; 
-    height: 50vh; 
-    background-color: #eeb231; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-  }
-  .about-text {
-    margin-left: 55% !important;
-    margin-bottom: 10%;
-  }
-  .h1 {
-    font-size: 65px;
-  }
-} */
 
 @media screen and (min-width: 768px) {
   .item-egg-middle {
