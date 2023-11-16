@@ -410,7 +410,8 @@ body {
 
 .about-logo {
   display: block;
-  width: 180px;
+  width: 20vh;
+  height: auto;
 }
 
 .about-img-2 {
@@ -430,14 +431,14 @@ body {
 
 @media screen and (min-width: 1024px) {
   .about-img-2 {
-    width: 19rem;
-    left: -45%;
+    width: 22rem;
+    left: -55%;
   }
   .about-banner-2 {
     width: 45vh;
     height: 45vh;
     background-color: #eeb231;
-    left: 10%;
+    left: 5%;
   }
   .about-text {
     margin-left: 20% !important; 
@@ -448,15 +449,34 @@ body {
   }
 }
 
-
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 568px) {
   .about-img-2 {
-    width: calc(14rem + 4vw);
-    left: calc(-55% + 3vw + 2vh);
+    width: calc(13rem + 3vw);
+    left: -32vw;
   }
   .about-banner-2 {
-    width: calc(32vh + 3vw);
-    height: calc(32vh + 3vw);
+    width: calc(28vh + 2vw);
+    height: calc(28vh + 2vw);
+    background-color: #eeb231;
+    left: 25%;
+  }
+  .about-text {
+    margin-left: calc(20% + 2vw) !important;
+    margin-bottom: 10%;
+  }
+  .h1 {
+    font-size: calc(18px + 1.5vw);
+  }
+}
+
+@media screen and (min-width: 569px) and (max-width: 1023px) {
+  .about-img-2 {
+    width: calc(15rem + 4vw);
+    left: calc(-45% + 4vw);
+  }
+  .about-banner-2 {
+    width: calc(30vh + 3vw);
+    height: calc(30vh + 3vw);
     background-color: #eeb231;
     left: 20%;
   }
@@ -465,16 +485,14 @@ body {
     margin-bottom: 10%;
   }
   .h1 {
-    font-size: calc(22px + 1.5vw);
-  }
-
-  /* Estilos específicos para iPhone SE y dispositivos con dimensiones similares */
-  @media screen and (max-device-width: 414px) and (max-device-height: 736px), (max-device-width: 375px) and (max-device-height: 667px) {
-    .about-img-2 {
-      left: calc(-70% + 2vw + 1vh);
-    }
+    font-size: calc(20px + 1.5vw);
   }
 }
+
+
+
+
+
 
 
 
