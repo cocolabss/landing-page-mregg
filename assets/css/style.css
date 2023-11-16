@@ -444,29 +444,36 @@ body {
     margin-bottom: 10%;
   }
   .h1 {
-    font-size: 40px;
+    font-size: 50px;
   }
 }
+
+
 @media screen and (max-width: 1023px) {
   .about-img-2 {
-    width: calc(12rem + 5vw);
-    left: calc(-55% + 5vw);
+    /* Ajuste de ancho y posición para adaptarse a pantallas pequeñas y medianas */
+    width: calc(10rem + 6vw);
+    left: calc(-50% + 6vw);
   }
   .about-banner-2 {
-    width: calc(30vh + 3vw);
-    height: calc(30vh + 3vw);
+    /* Dimensiones ajustadas para mantener la proporción y visibilidad en pantallas pequeñas */
+    width: calc(28vh + 4vw);
+    height: calc(28vh + 4vw);
     background-color: #eeb231;
-    left: 20%;
+    left: 15%;
   }
   .about-text {
-    /* Posición más cercana al centro para ajustarse dentro del círculo */
-    margin-left: calc(20% + 3vw) !important; 
+    /* Ajuste de margen para asegurar la alineación y legibilidad del texto */
+    margin-left: calc(22% + 3vw) !important;
     margin-bottom: 10%;
   }
   .h1 {
-    font-size: calc(22px + 1vw);
+    /* Tamaño de fuente adaptable para diferentes tamaños de pantalla */
+    font-size: calc(20px + 1.5vw);
   }
 }
+
+
 
 
 
